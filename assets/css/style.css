@@ -1,4 +1,4 @@
-/* R26-IT-143 · AquaSense project site — plain CSS, no frameworks */
+/* R26-IT-143 · AI BASED SMART Swimming Pool Monitoring and Maintenance System project site — plain CSS, no frameworks */
 :root{
   --ink:#0b2233; --ink-2:#163a52; --deep:#0e4c6b; --aqua:#16a8b8; --aqua-2:#7fd6de;
   --foam:#eef7f9; --paper:#ffffff; --line:#d6e6ec; --muted:#55707f; --text:#1c2f3b;
@@ -32,9 +32,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .site-header{position:sticky;top:0;z-index:50;background:rgba(11,34,51,.96);backdrop-filter:blur(6px);border-bottom:3px solid transparent;
   border-image:repeating-linear-gradient(90deg,var(--rope) 0 18px,#fff 18px 36px,var(--aqua) 36px 54px,#fff 54px 72px) 3}
 .nav{display:flex;align-items:center;justify-content:space-between;min-height:66px;gap:16px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.brand{flex:1;min-width:0;max-width:440px;display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
 .brand svg{flex:none}
-.brand b{font-family:var(--display);font-size:1.25rem;font-weight:600;letter-spacing:.01em}
+.brand b{display:block;font-family:var(--display);font-size:1rem;line-height:1.3;overflow-wrap:anywhere;font-weight:600;letter-spacing:.01em}
 .brand small{display:block;font-family:var(--mono);font-size:.68rem;color:var(--aqua-2);letter-spacing:.12em}
 .menu{list-style:none;margin:0;padding:0;display:flex;gap:2px;align-items:center}
 .menu>li{position:relative}
@@ -48,11 +48,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .sub a:hover{background:var(--foam);color:var(--deep)}
 .has-sub:hover .sub,.has-sub:focus-within .sub{opacity:1;visibility:visible;transform:none}
 #nav-toggle{display:none}
-.burger{display:none;cursor:pointer;color:#fff;padding:8px;border-radius:8px}
+.burger{flex:none;display:none;cursor:pointer;color:#fff;padding:8px;border-radius:8px}
 .burger span,.burger span::before,.burger span::after{display:block;width:24px;height:2px;background:#fff;position:relative;content:""}
 .burger span::before{position:absolute;top:-7px}.burger span::after{position:absolute;top:7px}
 
-@media (max-width:960px){
+@media (max-width:1100px){
   .burger{display:block}
   .menu{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:var(--ink);padding:8px 16px 18px;display:none;max-height:calc(100vh - 70px);overflow:auto}
   #nav-toggle:checked ~ .menu{display:flex}
